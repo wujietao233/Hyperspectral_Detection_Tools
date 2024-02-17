@@ -6,7 +6,7 @@ from sklearn.cross_decomposition import PLSRegression
 from sklearn.metrics import mean_squared_error
 import numpy as np
 import scipy
-from train import sample_partitioning_based_on_joint_x_y_distance
+from split import sample_partitioning_based_on_joint_x_y_distance
 from scipy.linalg import qr
 import copy
 import warnings
