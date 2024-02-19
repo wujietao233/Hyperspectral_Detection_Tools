@@ -93,7 +93,6 @@ def load_hyperspectral_table(csvPath: str, spectral_indexes: list = None, target
     - waveList: 光谱数据每一列对应的波长长度。
     - spectral_data: 光谱数据。
     - target: 光谱数据对应的目标检测数据。
-
     """
 
     # 如果未提供索引，则设置默认值
