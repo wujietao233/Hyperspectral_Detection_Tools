@@ -19,7 +19,7 @@ def plot_hyperspectral_curve(hyperspectral_data, wave=None, x_label=None, y_labe
     - title: 标题。
 
     """
-    if not wave:
+    if not list(wave):
         wave = range(1, hyperspectral_data.shape[1] + 1)
     for i in range(hyperspectral_data.shape[0]):
         plt.plot(wave, hyperspectral_data[i])

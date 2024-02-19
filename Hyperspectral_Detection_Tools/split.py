@@ -1,5 +1,5 @@
 """
-本文件是HDT工具包的数据划分模块。
+本文件是HDT工具包的数据划分模块，包括SPXY算法。
 """
 from scipy.spatial.distance import cdist
 import numpy as np

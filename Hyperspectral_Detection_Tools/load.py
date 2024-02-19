@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import os
 from spectral.io import envi
-from preprocess import largest_connected_component_cropping
+from Hyperspectral_Detection_Tools.preprocess import largest_connected_component_cropping
 
 
 def region_of_interest_extraction(

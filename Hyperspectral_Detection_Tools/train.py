@@ -10,7 +10,7 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import RandomForestRegressor, BaggingRegressor, AdaBoostRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 from tqdm import tqdm
-from split import sample_partitioning_based_on_joint_x_y_distance as spxy
+from Hyperspectral_Detection_Tools.split import sample_partitioning_based_on_joint_x_y_distance as spxy
 import pandas as pd
 import numpy as np
 import math
@@ -30,7 +30,7 @@ def train_spectral_table(
         seed=None
 ):
     """
-    该函数实现了对光谱表格数据进行多重随机划分训练模型的功能。
+    该函数实现了对光谱表格数据进行多重随机划分或SPXY划分训练模型的功能。
 
     输入：
     - X: 自变量的数据集。

@@ -1,12 +1,12 @@
 """
-本文件是HDT工具包的特征降维模块，包括竞争自适应重加权采样算法、连续投影法、主成分分析法。
+本文件是HDT工具包的特征降维模块，包括竞争自适应重加权采样算法、连续投影法。
 """
 from sklearn.model_selection import KFold, train_test_split
 from sklearn.cross_decomposition import PLSRegression
 from sklearn.metrics import mean_squared_error
 import numpy as np
 import scipy
-from split import sample_partitioning_based_on_joint_x_y_distance
+from Hyperspectral_Detection_Tools.split import sample_partitioning_based_on_joint_x_y_distance
 from scipy.linalg import qr
 import copy
 import warnings

@@ -11,7 +11,7 @@ from scipy.signal import savgol_filter
 
 def largest_connected_component_cropping(mask, img):
     """
-    最大连通域裁剪
+    该函数实现了ROI区域提取中，最大连通域裁剪的功能。
 
     输入：
     - mask: 二值化图像。
