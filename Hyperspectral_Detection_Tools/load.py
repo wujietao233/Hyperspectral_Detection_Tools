@@ -33,7 +33,7 @@ def region_of_interest_extraction(
     # 读取targetPath文件
     target = pd.read_csv(targetPath)
     # target转为字典
-    targetDict = dict(zip(target.iloc[:, 0], target.iloc[:, 1]))
+    targetDict = dict(zip(map(str, target.iloc[:, 0]), target.iloc[:, 1]))
     # 表格列表
     tableList = []
     # 获取rootPath路径下的所有hdr文件
